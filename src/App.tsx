@@ -115,6 +115,8 @@ export function App() {
         ))}
         <p className="small muted" style={{ padding: '14px 10px 0' }}>
           Release 1 · BSM Part I · SAE J2735 SEP2024
+          <br />
+          <a href="https://github.com/s-dasgupta/v2x-message-lab" target="_blank" rel="noreferrer">Source code on GitHub</a>
         </p>
       </nav>
       <main id="main" tabIndex={-1}>

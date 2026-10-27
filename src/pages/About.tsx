@@ -57,6 +57,7 @@ export function AboutPage() {
             <li>FHWA-JPO-13-046, <em>SAE J2735 Standard: Applying the Systems Engineering Process</em> (USDOT, 2013) — background on user needs and interoperability; it does not override J2735:2024.</li>
             <li>ITU-T X.680 (ASN.1) and X.691 (PER) — freely available from the ITU.</li>
             <li>USDOT ITS JPO ODE projects (Apache-2.0) — independent reference vectors.</li>
+            <li>Source code, issues and contributions: <a href="https://github.com/s-dasgupta/v2x-message-lab" target="_blank" rel="noreferrer">github.com/s-dasgupta/v2x-message-lab</a></li>
           </ul>
         </div>
         <div className="card">

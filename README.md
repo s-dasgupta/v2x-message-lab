@@ -2,6 +2,8 @@
 
 **Learn, Build, Encode, and Decode SAE J2735 Messages.**
 
+**Live site:** <https://s-dasgupta.github.io/v2x-message-lab/> · **Source:** <https://github.com/s-dasgupta/v2x-message-lab>
+
 An open-source, browser-only learning laboratory for SAE J2735 (SEP2024). Release 1 covers the
 **Basic Safety Message (BSM), Part I**: enter real vehicle measurements, watch each value become a
 standardized J2735 integer, encode it with a real ASN.1 UPER codec, inspect every bit, and decode
@@ -92,7 +94,8 @@ Independent real-world payloads are in `tests/fixtures/reference-vectors.json`.
 
 GitHub Actions builds, tests, cross-validates and deploys to GitHub Pages on every push to `main`.
 Step-by-step instructions: [docs/PUBLISHING.md](docs/PUBLISHING.md). The site works from a project URL
-such as `https://USERNAME.github.io/v2x-message-lab/` (hash routing, relative assets).
+such as `https://s-dasgupta.github.io/v2x-message-lab/` (hash routing, relative assets). Forks deploy to
+`https://<your-username>.github.io/<repository-name>/` with no code changes.
 
 ## References
 

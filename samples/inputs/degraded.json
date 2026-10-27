@@ -1,0 +1,110 @@
+{
+  "scenario": "degraded",
+  "title": "Unavailable / degraded sensors",
+  "summary": "GNSS is degraded under an overpass and several vehicle-bus signals are missing.",
+  "physics": [
+    "Position is a dead-reckoned estimate: latitude/longitude are still sent, but elevation and the accuracy ellipse are unavailable.",
+    "Speed comes from wheel-speed sensors and remains available; heading is not reliable and is sent as unavailable.",
+    "Yaw rate is unavailable, but DE_YawRate has no unavailable code — the tool must send 0 and warns about it.",
+    "Brake, stability, transmission and size information is not provided by this vehicle integration."
+  ],
+  "inputs": {
+    "latitude": {
+      "value": "33.2108712",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "longitude": {
+      "value": "-87.5462871",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "elevation": {
+      "value": "",
+      "unit": "m",
+      "unavailable": true
+    },
+    "utcSecond": {
+      "value": "59.999",
+      "unit": "s",
+      "unavailable": false
+    },
+    "semiMajor": {
+      "value": "",
+      "unit": "m",
+      "unavailable": true
+    },
+    "semiMinor": {
+      "value": "",
+      "unit": "m",
+      "unavailable": true
+    },
+    "orientation": {
+      "value": "",
+      "unit": "deg",
+      "unavailable": true
+    },
+    "transmission": "unavailable",
+    "speed": {
+      "value": "30",
+      "unit": "km/h",
+      "unavailable": false
+    },
+    "heading": {
+      "value": "",
+      "unit": "deg",
+      "unavailable": true
+    },
+    "steeringWheelAngle": {
+      "value": "",
+      "unit": "deg",
+      "unavailable": true
+    },
+    "accelLong": {
+      "value": "-0.2",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelLat": {
+      "value": "",
+      "unit": "m/s²",
+      "unavailable": true
+    },
+    "accelVert": {
+      "value": "",
+      "unit": "m/s²",
+      "unavailable": true
+    },
+    "yawRate": {
+      "value": "",
+      "unit": "deg/s",
+      "unavailable": true
+    },
+    "wheelBrakes": {
+      "unavailable": true,
+      "leftFront": false,
+      "leftRear": false,
+      "rightFront": false,
+      "rightRear": false
+    },
+    "traction": "unavailable",
+    "abs": "unavailable",
+    "scs": "unavailable",
+    "brakeBoost": "unavailable",
+    "auxBrakes": "unavailable",
+    "vehicleWidth": {
+      "value": "",
+      "unit": "m",
+      "unavailable": true
+    },
+    "vehicleLength": {
+      "value": "",
+      "unit": "m",
+      "unavailable": true
+    }
+  },
+  "system": {
+    "msgCount": 127,
+    "temporaryId": "0B91D6E4"
+  }
+}

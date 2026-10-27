@@ -1,0 +1,223 @@
+{
+  "scenario": "degraded",
+  "ok": true,
+  "messageId": 20,
+  "decoded": {
+    "messageId": 20,
+    "value": {
+      "coreData": {
+        "msgCnt": 127,
+        "id": "0B91D6E4",
+        "secMark": 59999,
+        "lat": 332108712,
+        "long": -875462871,
+        "elev": -4096,
+        "accuracy": {
+          "semiMajor": 255,
+          "semiMinor": 255,
+          "orientation": 65535
+        },
+        "transmission": "unavailable",
+        "speed": 417,
+        "heading": 28800,
+        "angle": 127,
+        "accelSet": {
+          "long": -20,
+          "lat": 2001,
+          "vert": -127,
+          "yaw": 0
+        },
+        "brakes": {
+          "wheelBrakes": "10000",
+          "traction": "unavailable",
+          "abs": "unavailable",
+          "scs": "unavailable",
+          "brakeBoost": "unavailable",
+          "auxBrakes": "unavailable"
+        },
+        "size": {
+          "width": 0,
+          "length": 0
+        }
+      }
+    }
+  },
+  "interpretation": [
+    {
+      "path": "coreData.msgCnt",
+      "raw": 127,
+      "status": "value",
+      "display": "127"
+    },
+    {
+      "path": "coreData.id",
+      "raw": "0B91D6E4",
+      "status": "value",
+      "display": "0B91D6E4"
+    },
+    {
+      "path": "coreData.secMark",
+      "raw": 59999,
+      "status": "value",
+      "physical": {
+        "value": 59.999,
+        "unit": "s"
+      },
+      "display": "59.999 s into the minute"
+    },
+    {
+      "path": "coreData.lat",
+      "raw": 332108712,
+      "status": "value",
+      "physical": {
+        "value": 33.2108712,
+        "unit": "deg"
+      },
+      "display": "33.2108712 deg"
+    },
+    {
+      "path": "coreData.long",
+      "raw": -875462871,
+      "status": "value",
+      "physical": {
+        "value": -87.5462871,
+        "unit": "deg"
+      },
+      "display": "-87.5462871 deg"
+    },
+    {
+      "path": "coreData.elev",
+      "raw": -4096,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.accuracy.semiMajor",
+      "raw": 255,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.accuracy.semiMinor",
+      "raw": 255,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.accuracy.orientation",
+      "raw": 65535,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.transmission",
+      "raw": "unavailable",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.speed",
+      "raw": 417,
+      "status": "value",
+      "physical": {
+        "value": 8.34,
+        "unit": "m/s"
+      },
+      "display": "8.34 m/s (30.02 km/h)"
+    },
+    {
+      "path": "coreData.heading",
+      "raw": 28800,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.angle",
+      "raw": 127,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.accelSet.long",
+      "raw": -20,
+      "status": "value",
+      "physical": {
+        "value": -0.2,
+        "unit": "m/s²"
+      },
+      "display": "-0.2 m/s²"
+    },
+    {
+      "path": "coreData.accelSet.lat",
+      "raw": 2001,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.accelSet.vert",
+      "raw": -127,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.accelSet.yaw",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "deg/s"
+      },
+      "display": "0 deg/s",
+      "note": "DE_YawRate has no unavailable code; 0 may also be used by senders that lack a yaw sensor"
+    },
+    {
+      "path": "coreData.brakes.wheelBrakes",
+      "raw": "10000",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.brakes.traction",
+      "raw": "unavailable",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.brakes.abs",
+      "raw": "unavailable",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.brakes.scs",
+      "raw": "unavailable",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.brakes.brakeBoost",
+      "raw": "unavailable",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.brakes.auxBrakes",
+      "raw": "unavailable",
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.size.width",
+      "raw": 0,
+      "status": "unavailable",
+      "display": "unavailable"
+    },
+    {
+      "path": "coreData.size.length",
+      "raw": 0,
+      "status": "unavailable",
+      "display": "unavailable"
+    }
+  ],
+  "issues": []
+}

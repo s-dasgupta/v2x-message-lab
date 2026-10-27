@@ -1,0 +1,263 @@
+{
+  "scenario": "stationary",
+  "ok": true,
+  "messageId": 20,
+  "decoded": {
+    "messageId": 20,
+    "value": {
+      "coreData": {
+        "msgCnt": 3,
+        "id": "C47E2B90",
+        "secMark": 5500,
+        "lat": 332099018,
+        "long": -875418310,
+        "elev": 386,
+        "accuracy": {
+          "semiMajor": 24,
+          "semiMinor": 17,
+          "orientation": 2731
+        },
+        "transmission": "forwardGears",
+        "speed": 0,
+        "heading": 0,
+        "angle": 0,
+        "accelSet": {
+          "long": 0,
+          "lat": 0,
+          "vert": 0,
+          "yaw": 0
+        },
+        "brakes": {
+          "wheelBrakes": "01111",
+          "traction": "on",
+          "abs": "on",
+          "scs": "on",
+          "brakeBoost": "off",
+          "auxBrakes": "off"
+        },
+        "size": {
+          "width": 186,
+          "length": 497
+        }
+      }
+    }
+  },
+  "interpretation": [
+    {
+      "path": "coreData.msgCnt",
+      "raw": 3,
+      "status": "value",
+      "display": "3"
+    },
+    {
+      "path": "coreData.id",
+      "raw": "C47E2B90",
+      "status": "value",
+      "display": "C47E2B90"
+    },
+    {
+      "path": "coreData.secMark",
+      "raw": 5500,
+      "status": "value",
+      "physical": {
+        "value": 5.5,
+        "unit": "s"
+      },
+      "display": "5.5 s into the minute"
+    },
+    {
+      "path": "coreData.lat",
+      "raw": 332099018,
+      "status": "value",
+      "physical": {
+        "value": 33.2099018,
+        "unit": "deg"
+      },
+      "display": "33.2099018 deg"
+    },
+    {
+      "path": "coreData.long",
+      "raw": -875418310,
+      "status": "value",
+      "physical": {
+        "value": -87.541831,
+        "unit": "deg"
+      },
+      "display": "-87.541831 deg"
+    },
+    {
+      "path": "coreData.elev",
+      "raw": 386,
+      "status": "value",
+      "physical": {
+        "value": 38.6,
+        "unit": "m"
+      },
+      "display": "38.6 m"
+    },
+    {
+      "path": "coreData.accuracy.semiMajor",
+      "raw": 24,
+      "status": "value",
+      "physical": {
+        "value": 1.2000000000000002,
+        "unit": "m"
+      },
+      "display": "1.2 m"
+    },
+    {
+      "path": "coreData.accuracy.semiMinor",
+      "raw": 17,
+      "status": "value",
+      "physical": {
+        "value": 0.8500000000000001,
+        "unit": "m"
+      },
+      "display": "0.85 m"
+    },
+    {
+      "path": "coreData.accuracy.orientation",
+      "raw": 2731,
+      "status": "value",
+      "physical": {
+        "value": 15.002059967956056,
+        "unit": "deg"
+      },
+      "display": "15.0021 deg"
+    },
+    {
+      "path": "coreData.transmission",
+      "raw": "forwardGears",
+      "status": "value",
+      "display": "forwardGears"
+    },
+    {
+      "path": "coreData.speed",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "m/s"
+      },
+      "display": "0 m/s (0 km/h)"
+    },
+    {
+      "path": "coreData.heading",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "deg"
+      },
+      "display": "0 deg"
+    },
+    {
+      "path": "coreData.angle",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "deg"
+      },
+      "display": "0 deg"
+    },
+    {
+      "path": "coreData.accelSet.long",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "m/s²"
+      },
+      "display": "0 m/s²"
+    },
+    {
+      "path": "coreData.accelSet.lat",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "m/s²"
+      },
+      "display": "0 m/s²"
+    },
+    {
+      "path": "coreData.accelSet.vert",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "m/s²"
+      },
+      "display": "0 G (0 m/s²)"
+    },
+    {
+      "path": "coreData.accelSet.yaw",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "deg/s"
+      },
+      "display": "0 deg/s",
+      "note": "DE_YawRate has no unavailable code; 0 may also be used by senders that lack a yaw sensor"
+    },
+    {
+      "path": "coreData.brakes.wheelBrakes",
+      "raw": "01111",
+      "status": "value",
+      "display": "applied: leftFront, leftRear, rightFront, rightRear"
+    },
+    {
+      "path": "coreData.brakes.traction",
+      "raw": "on",
+      "status": "value",
+      "display": "on"
+    },
+    {
+      "path": "coreData.brakes.abs",
+      "raw": "on",
+      "status": "value",
+      "display": "on"
+    },
+    {
+      "path": "coreData.brakes.scs",
+      "raw": "on",
+      "status": "value",
+      "display": "on"
+    },
+    {
+      "path": "coreData.brakes.brakeBoost",
+      "raw": "off",
+      "status": "value",
+      "display": "off"
+    },
+    {
+      "path": "coreData.brakes.auxBrakes",
+      "raw": "off",
+      "status": "value",
+      "display": "off"
+    },
+    {
+      "path": "coreData.size.width",
+      "raw": 186,
+      "status": "value",
+      "physical": {
+        "value": 1.86,
+        "unit": "m"
+      },
+      "display": "1.86 m"
+    },
+    {
+      "path": "coreData.size.length",
+      "raw": 497,
+      "status": "value",
+      "physical": {
+        "value": 4.97,
+        "unit": "m"
+      },
+      "display": "4.97 m"
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.vite/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python validation
+__pycache__/
+.venv/
+tools/validation/generated/
+
+# Never commit copies of the SAE standard or its official ASN.1 files
+*.pdf
+*.asn
+*.asn1

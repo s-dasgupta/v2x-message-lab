@@ -1,0 +1,262 @@
+{
+  "scenario": "turning",
+  "ok": true,
+  "messageId": 20,
+  "decoded": {
+    "messageId": 20,
+    "value": {
+      "coreData": {
+        "msgCnt": 88,
+        "id": "5A3F09C1",
+        "secMark": 45020,
+        "lat": 332108712,
+        "long": -875462871,
+        "elev": 386,
+        "accuracy": {
+          "semiMajor": 24,
+          "semiMinor": 17,
+          "orientation": 2731
+        },
+        "transmission": "forwardGears",
+        "speed": 347,
+        "heading": 10800,
+        "angle": 84,
+        "accelSet": {
+          "long": -30,
+          "lat": 241,
+          "vert": 0,
+          "yaw": 1989
+        },
+        "brakes": {
+          "wheelBrakes": "00000",
+          "traction": "on",
+          "abs": "on",
+          "scs": "on",
+          "brakeBoost": "off",
+          "auxBrakes": "off"
+        },
+        "size": {
+          "width": 186,
+          "length": 497
+        }
+      }
+    }
+  },
+  "interpretation": [
+    {
+      "path": "coreData.msgCnt",
+      "raw": 88,
+      "status": "value",
+      "display": "88"
+    },
+    {
+      "path": "coreData.id",
+      "raw": "5A3F09C1",
+      "status": "value",
+      "display": "5A3F09C1"
+    },
+    {
+      "path": "coreData.secMark",
+      "raw": 45020,
+      "status": "value",
+      "physical": {
+        "value": 45.02,
+        "unit": "s"
+      },
+      "display": "45.02 s into the minute"
+    },
+    {
+      "path": "coreData.lat",
+      "raw": 332108712,
+      "status": "value",
+      "physical": {
+        "value": 33.2108712,
+        "unit": "deg"
+      },
+      "display": "33.2108712 deg"
+    },
+    {
+      "path": "coreData.long",
+      "raw": -875462871,
+      "status": "value",
+      "physical": {
+        "value": -87.5462871,
+        "unit": "deg"
+      },
+      "display": "-87.5462871 deg"
+    },
+    {
+      "path": "coreData.elev",
+      "raw": 386,
+      "status": "value",
+      "physical": {
+        "value": 38.6,
+        "unit": "m"
+      },
+      "display": "38.6 m"
+    },
+    {
+      "path": "coreData.accuracy.semiMajor",
+      "raw": 24,
+      "status": "value",
+      "physical": {
+        "value": 1.2000000000000002,
+        "unit": "m"
+      },
+      "display": "1.2 m"
+    },
+    {
+      "path": "coreData.accuracy.semiMinor",
+      "raw": 17,
+      "status": "value",
+      "physical": {
+        "value": 0.8500000000000001,
+        "unit": "m"
+      },
+      "display": "0.85 m"
+    },
+    {
+      "path": "coreData.accuracy.orientation",
+      "raw": 2731,
+      "status": "value",
+      "physical": {
+        "value": 15.002059967956056,
+        "unit": "deg"
+      },
+      "display": "15.0021 deg"
+    },
+    {
+      "path": "coreData.transmission",
+      "raw": "forwardGears",
+      "status": "value",
+      "display": "forwardGears"
+    },
+    {
+      "path": "coreData.speed",
+      "raw": 347,
+      "status": "value",
+      "physical": {
+        "value": 6.94,
+        "unit": "m/s"
+      },
+      "display": "6.94 m/s (24.98 km/h)"
+    },
+    {
+      "path": "coreData.heading",
+      "raw": 10800,
+      "status": "value",
+      "physical": {
+        "value": 135,
+        "unit": "deg"
+      },
+      "display": "135 deg"
+    },
+    {
+      "path": "coreData.angle",
+      "raw": 84,
+      "status": "value",
+      "physical": {
+        "value": 126,
+        "unit": "deg"
+      },
+      "display": "126 deg"
+    },
+    {
+      "path": "coreData.accelSet.long",
+      "raw": -30,
+      "status": "value",
+      "physical": {
+        "value": -0.3,
+        "unit": "m/s²"
+      },
+      "display": "-0.3 m/s²"
+    },
+    {
+      "path": "coreData.accelSet.lat",
+      "raw": 241,
+      "status": "value",
+      "physical": {
+        "value": 2.41,
+        "unit": "m/s²"
+      },
+      "display": "2.41 m/s²"
+    },
+    {
+      "path": "coreData.accelSet.vert",
+      "raw": 0,
+      "status": "value",
+      "physical": {
+        "value": 0,
+        "unit": "m/s²"
+      },
+      "display": "0 G (0 m/s²)"
+    },
+    {
+      "path": "coreData.accelSet.yaw",
+      "raw": 1989,
+      "status": "value",
+      "physical": {
+        "value": 19.89,
+        "unit": "deg/s"
+      },
+      "display": "19.89 deg/s"
+    },
+    {
+      "path": "coreData.brakes.wheelBrakes",
+      "raw": "00000",
+      "status": "value",
+      "display": "no wheel braking"
+    },
+    {
+      "path": "coreData.brakes.traction",
+      "raw": "on",
+      "status": "value",
+      "display": "on"
+    },
+    {
+      "path": "coreData.brakes.abs",
+      "raw": "on",
+      "status": "value",
+      "display": "on"
+    },
+    {
+      "path": "coreData.brakes.scs",
+      "raw": "on",
+      "status": "value",
+      "display": "on"
+    },
+    {
+      "path": "coreData.brakes.brakeBoost",
+      "raw": "off",
+      "status": "value",
+      "display": "off"
+    },
+    {
+      "path": "coreData.brakes.auxBrakes",
+      "raw": "off",
+      "status": "value",
+      "display": "off"
+    },
+    {
+      "path": "coreData.size.width",
+      "raw": 186,
+      "status": "value",
+      "physical": {
+        "value": 1.86,
+        "unit": "m"
+      },
+      "display": "1.86 m"
+    },
+    {
+      "path": "coreData.size.length",
+      "raw": 497,
+      "status": "value",
+      "physical": {
+        "value": 4.97,
+        "unit": "m"
+      },
+      "display": "4.97 m"
+    }
+  ],
+  "issues": []
+}

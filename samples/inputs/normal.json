@@ -1,0 +1,109 @@
+{
+  "scenario": "normal",
+  "title": "Normal driving",
+  "summary": "A sedan cruising east at a steady 50 km/h on a straight road with good GNSS reception.",
+  "physics": [
+    "Constant speed and heading → longitudinal, lateral acceleration and yaw rate are all zero.",
+    "Steering wheel centred; no brakes applied; stability systems switched on but not intervening.",
+    "Elevation is the ellipsoidal height (≈ 68 m above sea level minus a ≈ 29 m geoid separation)."
+  ],
+  "inputs": {
+    "latitude": {
+      "value": "33.2108712",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "longitude": {
+      "value": "-87.5462871",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "elevation": {
+      "value": "38.6",
+      "unit": "m",
+      "unavailable": false
+    },
+    "utcSecond": {
+      "value": "12.345",
+      "unit": "s",
+      "unavailable": false
+    },
+    "semiMajor": {
+      "value": "1.20",
+      "unit": "m",
+      "unavailable": false
+    },
+    "semiMinor": {
+      "value": "0.85",
+      "unit": "m",
+      "unavailable": false
+    },
+    "orientation": {
+      "value": "15",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "transmission": "forwardGears",
+    "speed": {
+      "value": "50",
+      "unit": "km/h",
+      "unavailable": false
+    },
+    "heading": {
+      "value": "90",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "steeringWheelAngle": {
+      "value": "0",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "accelLong": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelLat": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelVert": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "yawRate": {
+      "value": "0",
+      "unit": "deg/s",
+      "unavailable": false
+    },
+    "wheelBrakes": {
+      "unavailable": false,
+      "leftFront": false,
+      "leftRear": false,
+      "rightFront": false,
+      "rightRear": false
+    },
+    "traction": "on",
+    "abs": "on",
+    "scs": "on",
+    "brakeBoost": "off",
+    "auxBrakes": "off",
+    "vehicleWidth": {
+      "value": "1.86",
+      "unit": "m",
+      "unavailable": false
+    },
+    "vehicleLength": {
+      "value": "4.97",
+      "unit": "m",
+      "unavailable": false
+    }
+  },
+  "system": {
+    "msgCount": 17,
+    "temporaryId": "5A3F09C1"
+  }
+}

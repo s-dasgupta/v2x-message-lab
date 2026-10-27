@@ -1,0 +1,30 @@
+{
+  "generatedBy": "scripts/export-samples.ts",
+  "samples": [
+    {
+      "scenario": "normal",
+      "title": "Normal driving",
+      "messageFrameHex": "00142504568FC2704C0E64B83E541B8DA89408C10C088555A15B1C207E7D07D07F7FFF054A5D0F88"
+    },
+    {
+      "scenario": "emergency-braking",
+      "title": "Emergency braking",
+      "messageFrameHex": "0014250D168FC2705F2724B83E541B8DA89408C10C088555A1F41C207E4C47DA7F80137DD25D0F88"
+    },
+    {
+      "scenario": "turning",
+      "title": "Turning vehicle",
+      "messageFrameHex": "00142516168FC2706BF724B83E541B8DA89408C10C088555A0ADAA30D27B28C17F87C4054A5D0F88"
+    },
+    {
+      "scenario": "stationary",
+      "title": "Stationary at an intersection",
+      "messageFrameHex": "00142500F11F8AE4055F24B82B651B8DFF9C88C10C088555A00000007E7D07D07F7FFF7D4A5D0F88"
+    },
+    {
+      "scenario": "degraded",
+      "title": "Unavailable / degraded sensors",
+      "messageFrameHex": "0014251FC2E475B93A97E4B83E541B8DA89400007FFFFFFFF0D0F080FD7BCFA1007FFF8000000000"
+    }
+  ]
+}

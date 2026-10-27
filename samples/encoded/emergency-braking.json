@@ -1,0 +1,49 @@
+{
+  "scenario": "emergency-braking",
+  "basicSafetyMessage": {
+    "hex": "0D168FC2705F2724B83E541B8DA89408C10C088555A1F41C207E4C47DA7F80137DD25D0F88",
+    "octets": 37,
+    "bits": 293
+  },
+  "messageFrame": {
+    "hex": "0014250D168FC2705F2724B83E541B8DA89408C10C088555A1F41C207E4C47DA7F80137DD25D0F88",
+    "octets": 40,
+    "bits": 320
+  },
+  "coreData": {
+    "msgCnt": 52,
+    "id": "5A3F09C1",
+    "secMark": 31900,
+    "lat": 332108712,
+    "long": -875462871,
+    "elev": 386,
+    "accuracy": {
+      "semiMajor": 24,
+      "semiMinor": 17,
+      "orientation": 2731
+    },
+    "transmission": "forwardGears",
+    "speed": 1000,
+    "heading": 7200,
+    "angle": 0,
+    "accelSet": {
+      "long": -780,
+      "lat": 10,
+      "vert": 0,
+      "yaw": 20
+    },
+    "brakes": {
+      "wheelBrakes": "01111",
+      "traction": "on",
+      "abs": "engaged",
+      "scs": "on",
+      "brakeBoost": "on",
+      "auxBrakes": "off"
+    },
+    "size": {
+      "width": 186,
+      "length": 497
+    }
+  },
+  "warnings": []
+}

@@ -1,0 +1,56 @@
+{
+  "scenario": "degraded",
+  "basicSafetyMessage": {
+    "hex": "1FC2E475B93A97E4B83E541B8DA89400007FFFFFFFF0D0F080FD7BCFA1007FFF8000000000",
+    "octets": 37,
+    "bits": 293
+  },
+  "messageFrame": {
+    "hex": "0014251FC2E475B93A97E4B83E541B8DA89400007FFFFFFFF0D0F080FD7BCFA1007FFF8000000000",
+    "octets": 40,
+    "bits": 320
+  },
+  "coreData": {
+    "msgCnt": 127,
+    "id": "0B91D6E4",
+    "secMark": 59999,
+    "lat": 332108712,
+    "long": -875462871,
+    "elev": -4096,
+    "accuracy": {
+      "semiMajor": 255,
+      "semiMinor": 255,
+      "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 417,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+      "long": -20,
+      "lat": 2001,
+      "vert": -127,
+      "yaw": 0
+    },
+    "brakes": {
+      "wheelBrakes": "10000",
+      "traction": "unavailable",
+      "abs": "unavailable",
+      "scs": "unavailable",
+      "brakeBoost": "unavailable",
+      "auxBrakes": "unavailable"
+    },
+    "size": {
+      "width": 0,
+      "length": 0
+    }
+  },
+  "warnings": [
+    {
+      "severity": "warning",
+      "code": "NO_UNAVAILABLE_CODE",
+      "path": "coreData.accelSet.yaw",
+      "message": "J2735 DE_YawRate has no code for \"unavailable\". This tool sends 0 (a convention seen in deployed data, not a requirement of the standard); receivers cannot distinguish it from a true zero yaw rate."
+    }
+  ]
+}

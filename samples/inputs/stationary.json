@@ -1,0 +1,109 @@
+{
+  "scenario": "stationary",
+  "title": "Stationary at an intersection",
+  "summary": "Stopped at a red light, in Drive with the foot on the brake, facing north.",
+  "physics": [
+    "Speed, accelerations and yaw rate are zero.",
+    "All wheel brakes are applied (service brake held) while the transmission stays in a forward gear.",
+    "Heading 0° is the last reliable direction of travel: §7.60 allows the past heading to be used when stopped and the path is well known."
+  ],
+  "inputs": {
+    "latitude": {
+      "value": "33.2099018",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "longitude": {
+      "value": "-87.5418310",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "elevation": {
+      "value": "38.6",
+      "unit": "m",
+      "unavailable": false
+    },
+    "utcSecond": {
+      "value": "5.500",
+      "unit": "s",
+      "unavailable": false
+    },
+    "semiMajor": {
+      "value": "1.20",
+      "unit": "m",
+      "unavailable": false
+    },
+    "semiMinor": {
+      "value": "0.85",
+      "unit": "m",
+      "unavailable": false
+    },
+    "orientation": {
+      "value": "15",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "transmission": "forwardGears",
+    "speed": {
+      "value": "0",
+      "unit": "km/h",
+      "unavailable": false
+    },
+    "heading": {
+      "value": "0",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "steeringWheelAngle": {
+      "value": "0",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "accelLong": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelLat": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelVert": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "yawRate": {
+      "value": "0",
+      "unit": "deg/s",
+      "unavailable": false
+    },
+    "wheelBrakes": {
+      "unavailable": false,
+      "leftFront": true,
+      "leftRear": true,
+      "rightFront": true,
+      "rightRear": true
+    },
+    "traction": "on",
+    "abs": "on",
+    "scs": "on",
+    "brakeBoost": "off",
+    "auxBrakes": "off",
+    "vehicleWidth": {
+      "value": "1.86",
+      "unit": "m",
+      "unavailable": false
+    },
+    "vehicleLength": {
+      "value": "4.97",
+      "unit": "m",
+      "unavailable": false
+    }
+  },
+  "system": {
+    "msgCount": 3,
+    "temporaryId": "C47E2B90"
+  }
+}

@@ -1,0 +1,5302 @@
+{
+ "description": "Independently decoded J2735 BSM MessageFrames (asn1c-based USDOT JPO ODE toolchain). Apache-2.0; see THIRD_PARTY_NOTICES.md.",
+ "generatedBy": "tools/validation/build_reference_fixture.py",
+ "sources": {
+  "stream_uper": "https://github.com/usdot-jpo-ode/asn1_codec/blob/1749ac5f2dabe8722cf643c17ad021aec77fed2e/data/examples/j2735.MessageFrame.128.bsms.uper",
+  "stream_xer": "https://github.com/usdot-jpo-ode/asn1_codec/blob/1749ac5f2dabe8722cf643c17ad021aec77fed2e/data/examples/j2735.MessageFrame.128.bsms.xer",
+  "ode_hex": "https://github.com/usdot-jpo-ode/jpo-ode/blob/eb8b142cdf0a5f66af4ef9d0d33567672d4139f4/jpo-ode-svcs/src/test/resources/us/dot/its/jpo/ode/udp/bsm/BsmReceiverTest_ValidBSM.txt",
+  "ode_xml": "https://github.com/usdot-jpo-ode/jpo-ode/blob/eb8b142cdf0a5f66af4ef9d0d33567672d4139f4/jpo-ode-svcs/src/test/resources/us/dot/its/jpo/ode/services/asn1/decoder-output-bsm.xml"
+ },
+ "vectors": [
+  {
+   "name": "jpo-ode/BsmReceiverTest_ValidBSM",
+   "source": "usdot-jpo-ode/jpo-ode@eb8b142cdf0a",
+   "entry": "MessageFrame",
+   "hex": "001480B8494C4C950CD8CDE6E9651116579F22A424DD78FFFFF00761E4FD7EB7D07F7FFF80005F11D1020214C1C0FFC7C016AFF4017A0FF65403B0FD204C20FFCCC04F8FE40C420FFE6404CEFE60E9A10133408FCFDE1438103AB4138F00E1EEC1048EC160103E237410445C171104E26BC103DC4154305C2C84103B1C1C8F0A82F42103F34262D1123198103DAC25FB12034CE10381C259F12038CA103574251B10E3B2210324C23AD0F23D8EFFFE0000209340D10000004264BF00",
+   "expectedCoreData": {
+    "msgCnt": 37,
+    "id": "31325433",
+    "secMark": 25399,
+    "lat": 405659938,
+    "long": -1050317754,
+    "elev": 14409,
+    "accuracy": {
+     "semiMajor": 186,
+     "semiMinor": 241,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 14,
+    "heading": 25060,
+    "angle": 127,
+    "accelSet": {
+     "long": 27,
+     "lat": 0,
+     "vert": 0,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 190,
+     "length": 570
+    }
+   },
+   "notes": "MessageFrame with Part II (VehicleSafetyExtensions, SupplementalVehicleExtensions); expected values from decoder-output-bsm.xml"
+  },
+  {
+   "name": "asn1_codec/128bsms#000",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD562FA8400039E8E717090F9665FE1BACC37FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100417FFFFFFE824E100A3FFFFFFFE8942102047FFFFFFE922A1026A40143FFE95D610423405D7FFEA75610322C0599FFEADFA10391C06B5FFEB7E6103CB40A03FFED2121033BC08ADFFED9A6102E8408E5FFEDE2E102BDC0885FFEDF0A1000BC019BFFF7F321FFFFC005DFFFC55A1FFFFFFFFFFFFDD1A100407FFFFFFFE1A2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 88,
+    "id": "BEA10000",
+    "secMark": 59299,
+    "lat": 411642143,
+    "long": -1048434120,
+    "elev": 18822,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#001",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD562FA8400039E8E717090F9665FE1BACC37FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100417FFFFFFE824E100A3FFFFFFFE8942102047FFFFFFE922A1026A40143FFE95D610423405D7FFEA75610322C0599FFEADFA10391C06B5FFEB7E6103CB40A03FFED2121033BC08ADFFED9A6102E8408E5FFEDE2E102BDC0885FFEDF0A1000BC019BFFF7F321FFFFC005DFFFC55A1FFFFFFFFFFFFDD1A100407FFFFFFFE1A2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 88,
+    "id": "BEA10000",
+    "secMark": 59299,
+    "lat": 411642143,
+    "long": -1048434120,
+    "elev": 18822,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#002",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144647866EC00039E8E717075F1665FF53ACFA7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410024C01C702FFFFA1FFFFC02B7FFFFFFA1FFFFC0551FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 30,
+    "id": "19BB0000",
+    "secMark": 59299,
+    "lat": 411641278,
+    "long": -1048433496,
+    "elev": 18932,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#003",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144647866EC00039E8E717075F1665FF53ACFA7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410024C01C702FFFFA1FFFFC02B7FFFFFFA1FFFFC0551FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 30,
+    "id": "19BB0000",
+    "secMark": 59299,
+    "lat": 411641278,
+    "long": -1048433496,
+    "elev": 18932,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#004",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD566FA840003A022717090E9665FE1A2CC37FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100407FFFFFFE8262100A2FFFFFFFE8956102037FFFFFFE923E102694013DFFE95EA10422405D1FFEA76A10321C0593FFEAE0E10390C06AFFFEB7FA103CA409FDFFED2261033AC08A7FFED9BA102E7408DFFFEDE42102BCC087FFFEDF1E1000AC0195FFF7F461FFFFC0057FFFC56E1FFFFFFFFFFFFDD2E1003F7FFFFFFFE1B6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 89,
+    "id": "BEA10000",
+    "secMark": 59400,
+    "lat": 411642141,
+    "long": -1048434123,
+    "elev": 18822,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#005",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD566FA840003A022717090E9665FE1A2CC37FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100407FFFFFFE8262100A2FFFFFFFE8956102037FFFFFFE923E102694013DFFE95EA10422405D1FFEA76A10321C0593FFEAE0E10390C06AFFFEB7FA103CA409FDFFED2261033AC08A7FFED9BA102E7408DFFFEDE42102BCC087FFFEDF1E1000AC0195FFF7F461FFFFC0057FFFC56E1FFFFFFFFFFFFDD2E1003F7FFFFFFFE1B6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 89,
+    "id": "BEA10000",
+    "secMark": 59400,
+    "lat": 411642141,
+    "long": -1048434123,
+    "elev": 18822,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#006",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144647C66EC0003A022717075E1665FF53ACFAFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023C01C7031FFFA1FFFFC02B7FFFFFFA1FFFFC0551FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 31,
+    "id": "19BB0000",
+    "secMark": 59400,
+    "lat": 411641276,
+    "long": -1048433496,
+    "elev": 18933,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#007",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144647C66EC0003A022717075E1665FF53ACFAFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023C01C7031FFFA1FFFFC02B7FFFFFFA1FFFFC0551FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 31,
+    "id": "19BB0000",
+    "secMark": 59400,
+    "lat": 411641276,
+    "long": -1048433496,
+    "elev": 18933,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#008",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD56AFA840003A1B2717090C1665FE1A2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE82761009FFFFFFFFE896A102007FFFFFFE9252102664013DFFE95FE1041F405D1FFEA77E1031EC0593FFEAE221038DC06AFFFEB80E103C7409FDFFED23A10337C08A7FFED9CE102E4408DFFFEDE56102B9C087FFFEDF3210007C0195FFF7F5A1FFFFC0057FFFC5821FFFFFFFFFFFFDD421003C7FFFFFFFE1CAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 90,
+    "id": "BEA10000",
+    "secMark": 59500,
+    "lat": 411642136,
+    "long": -1048434123,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#009",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD56AFA840003A1B2717090C1665FE1A2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE82761009FFFFFFFFE896A102007FFFFFFE9252102664013DFFE95FE1041F405D1FFEA77E1031EC0593FFEAE221038DC06AFFFEB80E103C7409FDFFED23A10337C08A7FFED9CE102E4408DFFFEDE56102B9C087FFFEDF3210007C0195FFF7F5A1FFFFC0057FFFC5821FFFFFFFFFFFFDD421003C7FFFFFFFE1CAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 90,
+    "id": "BEA10000",
+    "secMark": 59500,
+    "lat": 411642136,
+    "long": -1048434123,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#010",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648066EC0003A1B2717075E1665FF53ACFAFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023C01C7031FFFA1FFFFC02B7FFFFFFA1FFFFC0551FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 32,
+    "id": "19BB0000",
+    "secMark": 59500,
+    "lat": 411641276,
+    "long": -1048433496,
+    "elev": 18933,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#011",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648066EC0003A1B2717075E1665FF53ACFAFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023C01C7031FFFA1FFFFC02B7FFFFFFA1FFFFC0551FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 32,
+    "id": "19BB0000",
+    "secMark": 59500,
+    "lat": 411641276,
+    "long": -1048433496,
+    "elev": 18933,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#012",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD56EFA840003A33E717090B9665FE1B2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE828A1009FFFFFFFFE897E102007FFFFFFE92661026640141FFE96121041F405D5FFEA7921031EC0597FFEAE361038DC06B3FFEB822103C740A01FFED24E10337C08ABFFED9E2102E4408E3FFEDE6A102B9C0883FFEDF4610007C0199FFF7F6E1FFFFC005BFFFC5961FFFFFFFFFFFFDD561003C7FFFFFFFE1DEFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 91,
+    "id": "BEA10000",
+    "secMark": 59599,
+    "lat": 411642135,
+    "long": -1048434121,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#013",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD56EFA840003A33E717090B9665FE1B2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE828A1009FFFFFFFFE897E102007FFFFFFE92661026640141FFE96121041F405D5FFEA7921031EC0597FFEAE361038DC06B3FFEB822103C740A01FFED24E10337C08ABFFED9E2102E4408E3FFEDE6A102B9C0883FFEDF4610007C0199FFF7F6E1FFFFC005BFFFC5961FFFFFFFFFFFFDD561003C7FFFFFFFE1DEFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 91,
+    "id": "BEA10000",
+    "secMark": 59599,
+    "lat": 411642135,
+    "long": -1048434121,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#014",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648466EC0003A33E717075D9665FF542CFAFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023401C9031FFFA1FFFFC02B9FFFFFFA1FFFFC0553FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 33,
+    "id": "19BB0000",
+    "secMark": 59599,
+    "lat": 411641275,
+    "long": -1048433495,
+    "elev": 18933,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#015",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648466EC0003A33E717075D9665FF542CFAFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023401C9031FFFA1FFFFC02B9FFFFFFA1FFFFC0553FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 33,
+    "id": "19BB0000",
+    "secMark": 59599,
+    "lat": 411641275,
+    "long": -1048433495,
+    "elev": 18933,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#016",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD572FA840003A4D2717090B9665FE1CACC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE829E1009FFFFFFFFE8992102007FFFFFFE927A1026640147FFE96261041F405DBFFEA7A61031EC059DFFEAE4A1038DC06B9FFEB836103C740A07FFED26210337C08B1FFED9F6102E4408E9FFEDE7E102B9C0889FFEDF5A10007C019FFFF7F821FFFFC0061FFFC5AA1FFFFFFFFFFFFDD6A1003C7FFFFFFFE1F2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 92,
+    "id": "BEA10000",
+    "secMark": 59700,
+    "lat": 411642135,
+    "long": -1048434118,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#017",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD572FA840003A4D2717090B9665FE1CACC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE829E1009FFFFFFFFE8992102007FFFFFFE927A1026640147FFE96261041F405DBFFEA7A61031EC059DFFEAE4A1038DC06B9FFEB836103C740A07FFED26210337C08B1FFED9F6102E4408E9FFEDE7E102B9C0889FFEDF5A10007C019FFFF7F821FFFFC0061FFFC5AA1FFFFFFFFFFFFDD6A1003C7FFFFFFFE1F2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 92,
+    "id": "BEA10000",
+    "secMark": 59700,
+    "lat": 411642135,
+    "long": -1048434118,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#018",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648866EC0003A4D2717075D9665FF542CFB7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023401C9033FFFA1FFFFC02B9FFFFFFA1FFFFC0553FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 34,
+    "id": "19BB0000",
+    "secMark": 59700,
+    "lat": 411641275,
+    "long": -1048433495,
+    "elev": 18934,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#019",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648866EC0003A4D2717075D9665FF542CFB7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023401C9033FFFA1FFFFC02B9FFFFFFA1FFFFC0553FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 34,
+    "id": "19BB0000",
+    "secMark": 59700,
+    "lat": 411641275,
+    "long": -1048433495,
+    "elev": 18934,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#020",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD576FA840003A65E717090C1665FE1E2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE82B21009FFFFFFFFE89A6102007FFFFFFE928E102664014DFFE963A1041F405E1FFEA7BA1031EC05A3FFEAE5E1038DC06BFFFEB84A103C740A0DFFED27610337C08B7FFEDA0A102E4408EFFFEDE92102B9C088FFFEDF6E10007C01A5FFF7F961FFFFC0067FFFC5BE1FFFFFFFFFFFFDD7E1003C7FFFFFFFE206FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 93,
+    "id": "BEA10000",
+    "secMark": 59799,
+    "lat": 411642136,
+    "long": -1048434115,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#021",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD576FA840003A65E717090C1665FE1E2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE82B21009FFFFFFFFE89A6102007FFFFFFE928E102664014DFFE963A1041F405E1FFEA7BA1031EC05A3FFEAE5E1038DC06BFFFEB84A103C740A0DFFED27610337C08B7FFEDA0A102E4408EFFFEDE92102B9C088FFFEDF6E10007C01A5FFF7F961FFFFC0067FFFC5BE1FFFFFFFFFFFFDD7E1003C7FFFFFFFE206FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 93,
+    "id": "BEA10000",
+    "secMark": 59799,
+    "lat": 411642136,
+    "long": -1048434115,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#022",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648C66EC0003A65E717075D9665FF552CFB7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023401CD033FFFA1FFFFC02BDFFFFFFA1FFFFC0557FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 35,
+    "id": "19BB0000",
+    "secMark": 59799,
+    "lat": 411641275,
+    "long": -1048433493,
+    "elev": 18934,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#023",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144648C66EC0003A65E717075D9665FF552CFB7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410023401CD033FFFA1FFFFC02BDFFFFFFA1FFFFC0557FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 35,
+    "id": "19BB0000",
+    "secMark": 59799,
+    "lat": 411641275,
+    "long": -1048433493,
+    "elev": 18934,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#024",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD57AFA840003A7F2717090D1665FE1F2CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003EFFFFFFFE82C6100A17FFFFFFE89BA10201FFFFFFFE92A210267C0151FFE964E10420C05E5FFEA7CE10320405A7FFEAE721038F406C3FFEB85E103C8C0A11FFED28A10339408BBFFEDA1E102E5C08F3FFEDEA6102BB40893FFEDF8210009401A9FFF7FAA1FFFFC006BFFFC5D21FFFFFFFFFFFFDD921003DFFFFFFFFE21AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 94,
+    "id": "BEA10000",
+    "secMark": 59900,
+    "lat": 411642138,
+    "long": -1048434113,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#025",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD57AFA840003A7F2717090D1665FE1F2CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003EFFFFFFFE82C6100A17FFFFFFE89BA10201FFFFFFFE92A210267C0151FFE964E10420C05E5FFEA7CE10320405A7FFEAE721038F406C3FFEB85E103C8C0A11FFED28A10339408BBFFEDA1E102E5C08F3FFEDEA6102BB40893FFEDF8210009401A9FFF7FAA1FFFFC006BFFFC5D21FFFFFFFFFFFFDD921003DFFFFFFFFE21AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 94,
+    "id": "BEA10000",
+    "secMark": 59900,
+    "lat": 411642138,
+    "long": -1048434113,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#026",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649066EC0003A7F2717075C9665FF562CFBFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D1035FFFA1FFFFC02C1FFFFFFA1FFFFC055BFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 36,
+    "id": "19BB0000",
+    "secMark": 59900,
+    "lat": 411641273,
+    "long": -1048433491,
+    "elev": 18935,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#027",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649066EC0003A7F2717075C9665FF562CFBFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D1035FFFA1FFFFC02C1FFFFFFA1FFFFC055BFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 36,
+    "id": "19BB0000",
+    "secMark": 59900,
+    "lat": 411641273,
+    "long": -1048433491,
+    "elev": 18935,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#028",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD57EFA8400000002717090C1665FE21ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE82DA1009FFFFFFFFE89CE102007FFFFFFE92B6102664015BFFE96621041F405EFFFEA7E21031EC05B1FFEAE861038DC06CDFFEB872103C740A1BFFED29E10337C08C5FFEDA32102E4408FDFFEDEBA102B9C089DFFEDF9610007C01B3FFF7FBE1FFFFC0075FFFC5E61FFFFFFFFFFFFDDA61003C7FFFFFFFE22EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 95,
+    "id": "BEA10000",
+    "secMark": 0,
+    "lat": 411642136,
+    "long": -1048434108,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#029",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD57EFA8400000002717090C1665FE21ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1003D7FFFFFFE82DA1009FFFFFFFFE89CE102007FFFFFFE92B6102664015BFFE96621041F405EFFFEA7E21031EC05B1FFEAE861038DC06CDFFEB872103C740A1BFFED29E10337C08C5FFEDA32102E4408FDFFEDEBA102B9C089DFFEDF9610007C01B3FFF7FBE1FFFFC0075FFFC5E61FFFFFFFFFFFFDDA61003C7FFFFFFFE22EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 95,
+    "id": "BEA10000",
+    "secMark": 0,
+    "lat": 411642136,
+    "long": -1048434108,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#030",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649466EC00000002717075C9665FF56ACFBFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D3035FFFA1FFFFC02C3FFFFFFA1FFFFC055DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 37,
+    "id": "19BB0000",
+    "secMark": 0,
+    "lat": 411641273,
+    "long": -1048433490,
+    "elev": 18935,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#031",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649466EC00000002717075C9665FF56ACFBFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D3035FFFA1FFFFC02C3FFFFFFA1FFFFC055DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 37,
+    "id": "19BB0000",
+    "secMark": 0,
+    "lat": 411641273,
+    "long": -1048433490,
+    "elev": 18935,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#032",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD582FA840000018E717090F9665FE232CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100417FFFFFFE82EE100A3FFFFFFFE89E2102047FFFFFFE92CA1026A40161FFE967610423405F5FFEA7F610322C05B7FFEAE9A10391C06D3FFEB886103CB40A21FFED2B21033BC08CBFFEDA46102E840903FFEDECE102BDC08A3FFEDFAA1000BC01B9FFF7FD21FFFFC007BFFFC5FA1FFFFFFFFFFFFDDBA100407FFFFFFFE242FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 96,
+    "id": "BEA10000",
+    "secMark": 99,
+    "lat": 411642143,
+    "long": -1048434105,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#033",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD582FA840000018E717090F9665FE232CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100417FFFFFFE82EE100A3FFFFFFFE89E2102047FFFFFFE92CA1026A40161FFE967610423405F5FFEA7F610322C05B7FFEAE9A10391C06D3FFEB886103CB40A21FFED2B21033BC08CBFFEDA46102E840903FFEDECE102BDC08A3FFEDFAA1000BC01B9FFF7FD21FFFFC007BFFFC5FA1FFFFFFFFFFFFDDBA100407FFFFFFFE242FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 96,
+    "id": "BEA10000",
+    "secMark": 99,
+    "lat": 411642143,
+    "long": -1048434105,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#034",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649866EC0000018E717075C9665FF57ACFC7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D7037FFFA1FFFFC02C7FFFFFFA1FFFFC0561FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 38,
+    "id": "19BB0000",
+    "secMark": 99,
+    "lat": 411641273,
+    "long": -1048433488,
+    "elev": 18936,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#035",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649866EC0000018E717075C9665FF57ACFC7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D7037FFFA1FFFFC02C7FFFFFFA1FFFFC0561FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 38,
+    "id": "19BB0000",
+    "secMark": 99,
+    "lat": 411641273,
+    "long": -1048433488,
+    "elev": 18936,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#036",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD586FA840000032271709111665FE26ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10042FFFFFFFE8302100A57FFFFFFE89F610205FFFFFFFE92DE1026BC016FFFE968A10424C0603FFEA80A10324405C5FFEAEAE10393406E1FFEB89A103CCC0A2FFFED2C61033D408D9FFEDA5A102E9C0911FFEDEE2102BF408B1FFEDFBE1000D401C7FFF7FE61FFFFC0089FFFC60E1FFFFFFFFFFFFDDCE10041FFFFFFFFE256FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 97,
+    "id": "BEA10000",
+    "secMark": 200,
+    "lat": 411642146,
+    "long": -1048434098,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#037",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD586FA840000032271709111665FE26ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10042FFFFFFFE8302100A57FFFFFFE89F610205FFFFFFFE92DE1026BC016FFFE968A10424C0603FFEA80A10324405C5FFEAEAE10393406E1FFEB89A103CCC0A2FFFED2C61033D408D9FFEDA5A102E9C0911FFEDEE2102BF408B1FFEDFBE1000D401C7FFF7FE61FFFFC0089FFFC60E1FFFFFFFFFFFFDDCE10041FFFFFFFFE256FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 97,
+    "id": "BEA10000",
+    "secMark": 200,
+    "lat": 411642146,
+    "long": -1048434098,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#038",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649C66EC0000018E717075C9665FF57ACFC7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D7037FFFA1FFFFC02C7FFFFFFA1FFFFC0561FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 39,
+    "id": "19BB0000",
+    "secMark": 99,
+    "lat": 411641273,
+    "long": -1048433488,
+    "elev": 18936,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#039",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "00144649C66EC0000018E717075C9665FF57ACFC7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021C01D7037FFFA1FFFFC02C7FFFFFFA1FFFFC0561FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 39,
+    "id": "19BB0000",
+    "secMark": 99,
+    "lat": 411641273,
+    "long": -1048433488,
+    "elev": 18936,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#040",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD58AFA84000004AE71709111665FE26ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10042FFFFFFFE8316100A57FFFFFFE8A0A10205FFFFFFFE92F21026BC016FFFE969E10424C0603FFEA81E10324405C5FFEAEC210393406E1FFEB8AE103CCC0A2FFFED2DA1033D408D9FFEDA6E102E9C0911FFEDEF6102BF408B1FFEDFD21000D401C7FFF7FFA1FFFFC0089FFFC6221FFFFFFFFFFFFDDE210041FFFFFFFFE26AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 98,
+    "id": "BEA10000",
+    "secMark": 299,
+    "lat": 411642146,
+    "long": -1048434098,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#041",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD58AFA84000004AE71709111665FE26ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10042FFFFFFFE8316100A57FFFFFFE8A0A10205FFFFFFFE92F21026BC016FFFE969E10424C0603FFEA81E10324405C5FFEAEC210393406E1FFEB8AE103CCC0A2FFFED2DA1033D408D9FFEDA6E102E9C0911FFEDEF6102BF408B1FFEDFD21000D401C7FFF7FFA1FFFFC0089FFFC6221FFFFFFFFFFFFDDE210041FFFFFFFFE26AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 98,
+    "id": "BEA10000",
+    "secMark": 299,
+    "lat": 411642146,
+    "long": -1048434098,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#042",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464A066EC000004AE717075B9665FF592CFC7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021401DD037FFFA1FFFFC02CDFFFFFFA1FFFFC0567FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 40,
+    "id": "19BB0000",
+    "secMark": 299,
+    "lat": 411641271,
+    "long": -1048433485,
+    "elev": 18936,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#043",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464A066EC000004AE717075B9665FF592CFC7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410021401DD037FFFA1FFFFC02CDFFFFFFA1FFFFC0567FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 40,
+    "id": "19BB0000",
+    "secMark": 299,
+    "lat": 411641271,
+    "long": -1048433485,
+    "elev": 18936,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#044",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD58EFA840000064271709111665FE26ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10042FFFFFFFE832A100A57FFFFFFE8A1E10205FFFFFFFE93061026BC016FFFE96B210424C0603FFEA83210324405C5FFEAED610393406E1FFEB8C2103CCC0A2FFFED2EE1033D408D9FFEDA82102E9C0911FFEDF0A102BF408B1FFEDFE61000D401C7FFF800E1FFFFC0089FFFC6361FFFFFFFFFFFFDDF610041FFFFFFFFE27EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 99,
+    "id": "BEA10000",
+    "secMark": 400,
+    "lat": 411642146,
+    "long": -1048434098,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#045",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD58EFA840000064271709111665FE26ACC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10042FFFFFFFE832A100A57FFFFFFE8A1E10205FFFFFFFE93061026BC016FFFE96B210424C0603FFEA83210324405C5FFEAED610393406E1FFEB8C2103CCC0A2FFFED2EE1033D408D9FFEDA82102E9C0911FFEDF0A102BF408B1FFEDFE61000D401C7FFF800E1FFFFC0089FFFC6361FFFFFFFFFFFFDDF610041FFFFFFFFE27EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 99,
+    "id": "BEA10000",
+    "secMark": 400,
+    "lat": 411642146,
+    "long": -1048434098,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#046",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464A466EC00000642717075B1665FF5A2CFCFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E1039FFFA1FFFFC02D1FFFFFFA1FFFFC056BFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 41,
+    "id": "19BB0000",
+    "secMark": 400,
+    "lat": 411641270,
+    "long": -1048433483,
+    "elev": 18937,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#047",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464A466EC00000642717075B1665FF5A2CFCFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E1039FFFA1FFFFC02D1FFFFFFA1FFFFC056BFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 41,
+    "id": "19BB0000",
+    "secMark": 400,
+    "lat": 411641270,
+    "long": -1048433483,
+    "elev": 18937,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#048",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD592FA84000007D271709149665FE282CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100467FFFFFFE833E100A8FFFFFFFE8A32102097FFFFFFE931A1026F40175FFE96C61042840609FFEA84610327C05CBFFEAEEA10396C06E7FFEB8D6103D040A35FFED30210340C08DFFFEDA96102ED40917FFEDF1E102C2C08B7FFEDFFA10010C01CDFFF80221FFFFC008FFFFC64A1FFFFFFFFFFFFDE0A100457FFFFFFFE292FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 100,
+    "id": "BEA10000",
+    "secMark": 500,
+    "lat": 411642153,
+    "long": -1048434095,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#049",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD592FA84000007D271709149665FE282CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100467FFFFFFE833E100A8FFFFFFFE8A32102097FFFFFFE931A1026F40175FFE96C61042840609FFEA84610327C05CBFFEAEEA10396C06E7FFEB8D6103D040A35FFED30210340C08DFFFEDA96102ED40917FFEDF1E102C2C08B7FFEDFFA10010C01CDFFF80221FFFFC008FFFFC64A1FFFFFFFFFFFFDE0A100457FFFFFFFE292FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 100,
+    "id": "BEA10000",
+    "secMark": 500,
+    "lat": 411642153,
+    "long": -1048434095,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#050",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464A866EC000007D2717075B1665FF5B2CFCFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E5039FFFA1FFFFC02D5FFFFFFA1FFFFC056FFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 42,
+    "id": "19BB0000",
+    "secMark": 500,
+    "lat": 411641270,
+    "long": -1048433481,
+    "elev": 18937,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#051",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464A866EC000007D2717075B1665FF5B2CFCFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E5039FFFA1FFFFC02D5FFFFFFA1FFFFC056FFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 42,
+    "id": "19BB0000",
+    "secMark": 500,
+    "lat": 411641270,
+    "long": -1048433481,
+    "elev": 18937,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#052",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD596FA840000095E71709171665FE2A2CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10048FFFFFFFE8352100AB7FFFFFFE8A461020BFFFFFFFE932E10271C017DFFE96DA1042AC0611FFEA85A1032A405D3FFEAEFE10399406EFFFEB8EA103D2C0A3DFFED31610343408E7FFEDAAA102EFC091FFFEDF32102C5408BFFFEE00E10013401D5FFF80361FFFFC0097FFFC65E1FFFFFFFFFFFFDE1E10047FFFFFFFFE2A6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 101,
+    "id": "BEA10000",
+    "secMark": 599,
+    "lat": 411642158,
+    "long": -1048434091,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#053",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD596FA840000095E71709171665FE2A2CC47FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10048FFFFFFFE8352100AB7FFFFFFE8A461020BFFFFFFFE932E10271C017DFFE96DA1042AC0611FFEA85A1032A405D3FFEAEFE10399406EFFFEB8EA103D2C0A3DFFED31610343408E7FFEDAAA102EFC091FFFEDF32102C5408BFFFEE00E10013401D5FFF80361FFFFC0097FFFC65E1FFFFFFFFFFFFDE1E10047FFFFFFFFE2A6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 101,
+    "id": "BEA10000",
+    "secMark": 599,
+    "lat": 411642158,
+    "long": -1048434091,
+    "elev": 18824,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#054",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464AC66EC0000095E717075B1665FF5B2CFCFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E5039FFFA1FFFFC02D5FFFFFFA1FFFFC056FFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 43,
+    "id": "19BB0000",
+    "secMark": 599,
+    "lat": 411641270,
+    "long": -1048433481,
+    "elev": 18937,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#055",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464AC66EC0000095E717075B1665FF5B2CFCFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E5039FFFA1FFFFC02D5FFFFFFA1FFFFC056FFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 43,
+    "id": "19BB0000",
+    "secMark": 599,
+    "lat": 411641270,
+    "long": -1048433481,
+    "elev": 18937,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#056",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD59AFA8400000AF271709199665FE2CACC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004B7FFFFFFE8366100ADFFFFFFFE8A5A1020E7FFFFFFE93421027440187FFE96EE1042D4061BFFEA86E1032CC05DDFFEAF121039BC06F9FFEB8FE103D540A47FFED32A10345C08F1FFEDABE102F240929FFEDF46102C7C08C9FFEE02210015C01DFFFF804A1FFFFC00A1FFFC6721FFFFFFFFFFFFDE321004A7FFFFFFFE2BAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 102,
+    "id": "BEA10000",
+    "secMark": 700,
+    "lat": 411642163,
+    "long": -1048434086,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#057",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD59AFA8400000AF271709199665FE2CACC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004B7FFFFFFE8366100ADFFFFFFFE8A5A1020E7FFFFFFE93421027440187FFE96EE1042D4061BFFEA86E1032CC05DDFFEAF121039BC06F9FFEB8FE103D540A47FFED32A10345C08F1FFEDABE102F240929FFEDF46102C7C08C9FFEE02210015C01DFFFF804A1FFFFC00A1FFFC6721FFFFFFFFFFFFDE321004A7FFFFFFFE2BAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 102,
+    "id": "BEA10000",
+    "secMark": 700,
+    "lat": 411642163,
+    "long": -1048434086,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#058",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464B066EC00000AF2717075B1665FF5BACFD7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E703BFFFA1FFFFC02D7FFFFFFA1FFFFC0571FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 44,
+    "id": "19BB0000",
+    "secMark": 700,
+    "lat": 411641270,
+    "long": -1048433480,
+    "elev": 18938,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#059",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464B066EC00000AF2717075B1665FF5BACFD7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E703BFFFA1FFFFC02D7FFFFFFA1FFFFC0571FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 44,
+    "id": "19BB0000",
+    "secMark": 700,
+    "lat": 411641270,
+    "long": -1048433480,
+    "elev": 18938,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#060",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD59EFA8400000C7E717091B1665FE2D2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004CFFFFFFFE837A100AF7FFFFFFE8A6E1020FFFFFFFFE935610275C0189FFE97021042EC061DFFEA8821032E405DFFFEAF261039D406FBFFEB912103D6C0A49FFED33E10347408F3FFEDAD2102F3C092BFFEDF5A102C9408CBFFEE03610017401E1FFF805E1FFFFC00A3FFFC6861FFFFFFFFFFFFDE461004BFFFFFFFFE2CEFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 103,
+    "id": "BEA10000",
+    "secMark": 799,
+    "lat": 411642166,
+    "long": -1048434085,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#061",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD59EFA8400000C7E717091B1665FE2D2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004CFFFFFFFE837A100AF7FFFFFFE8A6E1020FFFFFFFFE935610275C0189FFE97021042EC061DFFEA8821032E405DFFFEAF261039D406FBFFEB912103D6C0A49FFED33E10347408F3FFEDAD2102F3C092BFFEDF5A102C9408CBFFEE03610017401E1FFF805E1FFFFC00A3FFFC6861FFFFFFFFFFFFDE461004BFFFFFFFFE2CEFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 103,
+    "id": "BEA10000",
+    "secMark": 799,
+    "lat": 411642166,
+    "long": -1048434085,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#062",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464B466EC00000C7E717075B1665FF5BACFD7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E703BFFFA1FFFFC02D7FFFFFFA1FFFFC0571FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 45,
+    "id": "19BB0000",
+    "secMark": 799,
+    "lat": 411641270,
+    "long": -1048433480,
+    "elev": 18938,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#063",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464B466EC00000C7E717075B1665FF5BACFD7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC0410020C01E703BFFFA1FFFFC02D7FFFFFFA1FFFFC0571FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 45,
+    "id": "19BB0000",
+    "secMark": 799,
+    "lat": 411641270,
+    "long": -1048433480,
+    "elev": 18938,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#064",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5A2FA8400000E12717091C1665FE2F2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004DFFFFFFFE838E100B07FFFFFFE8A8210210FFFFFFFE936A10276C0191FFE97161042FC0625FFEA8961032F405E7FFEAF3A1039E40703FFEB926103D7C0A51FFED35210348408FBFFEDAE6102F4C0933FFEDF6E102CA408D3FFEE04A10018401E9FFF80721FFFFC00ABFFFC69A1FFFFFFFFFFFFDE5A1004CFFFFFFFFE2E2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 104,
+    "id": "BEA10000",
+    "secMark": 900,
+    "lat": 411642168,
+    "long": -1048434081,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#065",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5A2FA8400000E12717091C1665FE2F2CC3FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004DFFFFFFFE838E100B07FFFFFFE8A8210210FFFFFFFE936A10276C0191FFE97161042FC0625FFEA8961032F405E7FFEAF3A1039E40703FFEB926103D7C0A51FFED35210348408FBFFEDAE6102F4C0933FFEDF6E102CA408D3FFEE04A10018401E9FFF80721FFFFC00ABFFFC69A1FFFFFFFFFFFFDE5A1004CFFFFFFFFE2E2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 104,
+    "id": "BEA10000",
+    "secMark": 900,
+    "lat": 411642168,
+    "long": -1048434081,
+    "elev": 18823,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#066",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464B866EC00000E12717075A1665FF5BACFDFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001FC01E703DFFFA1FFFFC02D7FFFFFFA1FFFFC0571FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 46,
+    "id": "19BB0000",
+    "secMark": 900,
+    "lat": 411641268,
+    "long": -1048433480,
+    "elev": 18939,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#067",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464B866EC00000E12717075A1665FF5BACFDFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001FC01E703DFFFA1FFFFC02D7FFFFFFA1FFFFC0571FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 46,
+    "id": "19BB0000",
+    "secMark": 900,
+    "lat": 411641268,
+    "long": -1048433480,
+    "elev": 18939,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#068",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5A6FA8400000FA2717091D9665FE30ACC37FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004F7FFFFFFE83A2100B1FFFFFFFE8A96102127FFFFFFE937E1027840197FFE972A104314062BFFEA8AA10330C05EDFFEAF4E1039FC0709FFEB93A103D940A57FFED36610349C0901FFEDAFA102F640939FFEDF82102CBC08D9FFEE05E10019C01EFFFF80861FFFFC00B1FFFC6AE1FFFFFFFFFFFFDE6E1004E7FFFFFFFE2F6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 105,
+    "id": "BEA10000",
+    "secMark": 1000,
+    "lat": 411642171,
+    "long": -1048434078,
+    "elev": 18822,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#069",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5A6FA8400000FA2717091D9665FE30ACC37FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1004F7FFFFFFE83A2100B1FFFFFFFE8A96102127FFFFFFE937E1027840197FFE972A104314062BFFEA8AA10330C05EDFFEAF4E1039FC0709FFEB93A103D940A57FFED36610349C0901FFEDAFA102F640939FFEDF82102CBC08D9FFEE05E10019C01EFFFF80861FFFFC00B1FFFC6AE1FFFFFFFFFFFFDE6E1004E7FFFFFFFE2F6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 105,
+    "id": "BEA10000",
+    "secMark": 1000,
+    "lat": 411642171,
+    "long": -1048434078,
+    "elev": 18822,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#070",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464BC66EC00000FA2717075A1665FF5CACFDFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001FC01EB03DFFFA1FFFFC02DBFFFFFFA1FFFFC0575FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 47,
+    "id": "19BB0000",
+    "secMark": 1000,
+    "lat": 411641268,
+    "long": -1048433478,
+    "elev": 18939,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#071",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464BC66EC00000FA2717075A1665FF5CACFDFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001FC01EB03DFFFA1FFFFC02DBFFFFFFA1FFFFC0575FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 47,
+    "id": "19BB0000",
+    "secMark": 1000,
+    "lat": 411641268,
+    "long": -1048433478,
+    "elev": 18939,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#072",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5AAFA840000112E717091F9665FE31ACC2FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100517FFFFFFE83B6100B3FFFFFFFE8AAA102147FFFFFFE93921027A4019BFFE973E104334062FFFEA8BE10332C05F1FFEAF62103A1C070DFFEB94E103DB40A5BFFED37A1034BC0905FFEDB0E102F84093DFFEDF96102CDC08DDFFEE0721001BC01F3FFF809A1FFFFC00B5FFFC6C21FFFFFFFFFFFFDE82100507FFFFFFFE30AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 106,
+    "id": "BEA10000",
+    "secMark": 1099,
+    "lat": 411642175,
+    "long": -1048434076,
+    "elev": 18821,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#073",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5AAFA840000112E717091F9665FE31ACC2FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100517FFFFFFE83B6100B3FFFFFFFE8AAA102147FFFFFFE93921027A4019BFFE973E104334062FFFEA8BE10332C05F1FFEAF62103A1C070DFFEB94E103DB40A5BFFED37A1034BC0905FFEDB0E102F84093DFFEDF96102CDC08DDFFEE0721001BC01F3FFF809A1FFFFC00B5FFFC6C21FFFFFFFFFFFFDE82100507FFFFFFFE30AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 106,
+    "id": "BEA10000",
+    "secMark": 1099,
+    "lat": 411642175,
+    "long": -1048434076,
+    "elev": 18821,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#074",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464C066EC0000112E71707591665FF5CACFE7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001EC01EB03FFFFA1FFFFC02DBFFFFFFA1FFFFC0575FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 48,
+    "id": "19BB0000",
+    "secMark": 1099,
+    "lat": 411641266,
+    "long": -1048433478,
+    "elev": 18940,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#075",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464C066EC0000112E71707591665FF5CACFE7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001EC01EB03FFFFA1FFFFC02DBFFFFFFA1FFFFC0575FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 48,
+    "id": "19BB0000",
+    "secMark": 1099,
+    "lat": 411641266,
+    "long": -1048433478,
+    "elev": 18940,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#076",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5AEFA84000012C271709229665FE342CC27FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100547FFFFFFE83CA100B6FFFFFFFE8ABE102177FFFFFFE93A61027D401A7FFE9752104364063BFFEA8D210335C05FDFFEAF76103A4C0719FFEB962103DE40A67FFED38E1034EC0911FFEDB22102FB40949FFEDFAA102D0C08E9FFEE0861001EC01FFFFF80AE1FFFFC00C1FFFC6D61FFFFFFFFFFFFDE96100537FFFFFFFE31EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 107,
+    "id": "BEA10000",
+    "secMark": 1200,
+    "lat": 411642181,
+    "long": -1048434071,
+    "elev": 18820,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#077",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5AEFA84000012C271709229665FE342CC27FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100547FFFFFFE83CA100B6FFFFFFFE8ABE102177FFFFFFE93A61027D401A7FFE9752104364063BFFEA8D210335C05FDFFEAF76103A4C0719FFEB962103DE40A67FFED38E1034EC0911FFEDB22102FB40949FFEDFAA102D0C08E9FFEE0861001EC01FFFFF80AE1FFFFC00C1FFFC6D61FFFFFFFFFFFFDE96100537FFFFFFFE31EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 107,
+    "id": "BEA10000",
+    "secMark": 1200,
+    "lat": 411642181,
+    "long": -1048434071,
+    "elev": 18820,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#078",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464C466EC0000112E71707591665FF5CACFE7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001EC01EB03FFFFA1FFFFC02DBFFFFFFA1FFFFC0575FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 49,
+    "id": "19BB0000",
+    "secMark": 1099,
+    "lat": 411641266,
+    "long": -1048433478,
+    "elev": 18940,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#079",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464C466EC0000112E71707591665FF5CACFE7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001EC01EB03FFFFA1FFFFC02DBFFFFFFA1FFFFC0575FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 49,
+    "id": "19BB0000",
+    "secMark": 1099,
+    "lat": 411641266,
+    "long": -1048433478,
+    "elev": 18940,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#080",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5B2FA84000015E271709279665FE372CC1FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10058FFFFFFFE83F2100BB7FFFFFFE8AE61021BFFFFFFFE93CE10281C01B1FFE977A1043AC0645FFEA8FA1033A40607FFEAF9E103A940723FFEB98A103E2C0A71FFED3B6103534091BFFEDB4A102FFC0953FFEDFD2102D5408F3FFEE0AE1002340209FFF80D61FFFFC00CBFFFC6FE1FFFFFFFFFFFFDEBE10057FFFFFFFFE346FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 108,
+    "id": "BEA10000",
+    "secMark": 1400,
+    "lat": 411642191,
+    "long": -1048434065,
+    "elev": 18819,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#081",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5B2FA84000015E271709279665FE372CC1FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10058FFFFFFFE83F2100BB7FFFFFFE8AE61021BFFFFFFFE93CE10281C01B1FFE977A1043AC0645FFEA8FA1033A40607FFEAF9E103A940723FFEB98A103E2C0A71FFED3B6103534091BFFEDB4A102FFC0953FFEDFD2102D5408F3FFEE0AE1002340209FFF80D61FFFFC00CBFFFC6FE1FFFFFFFFFFFFDEBE10057FFFFFFFFE346FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 108,
+    "id": "BEA10000",
+    "secMark": 1400,
+    "lat": 411642191,
+    "long": -1048434065,
+    "elev": 18819,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#082",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464C866EC0000144E71707589665FF5DACFEFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001E401EF041FFFA1FFFFC02DFFFFFFFA1FFFFC0579FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 50,
+    "id": "19BB0000",
+    "secMark": 1299,
+    "lat": 411641265,
+    "long": -1048433476,
+    "elev": 18941,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#083",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464C866EC0000144E71707589665FF5DACFEFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001E401EF041FFFA1FFFFC02DFFFFFFFA1FFFFC0579FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 50,
+    "id": "19BB0000",
+    "secMark": 1299,
+    "lat": 411641265,
+    "long": -1048433476,
+    "elev": 18941,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#084",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5B6FA8400001772717092B1665FE392CC1FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1005CFFFFFFFE8406100BF7FFFFFFE8AFA1021FFFFFFFFE93E210285C01B9FFE978E1043EC064DFFEA90E1033E4060FFFEAFB2103AD4072BFFEB99E103E6C0A79FFED3CA1035740923FFEDB5E10303C095BFFEDFE6102D9408FBFFEE0C21002740211FFF80EA1FFFFC00D3FFFC7121FFFFFFFFFFFFDED21005BFFFFFFFFE35AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 109,
+    "id": "BEA10000",
+    "secMark": 1500,
+    "lat": 411642198,
+    "long": -1048434061,
+    "elev": 18819,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#085",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5B6FA8400001772717092B1665FE392CC1FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1005CFFFFFFFE8406100BF7FFFFFFE8AFA1021FFFFFFFFE93E210285C01B9FFE978E1043EC064DFFEA90E1033E4060FFFEAFB2103AD4072BFFEB99E103E6C0A79FFED3CA1035740923FFEDB5E10303C095BFFEDFE6102D9408FBFFEE0C21002740211FFF80EA1FFFFC00D3FFFC7121FFFFFFFFFFFFDED21005BFFFFFFFFE35AFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 109,
+    "id": "BEA10000",
+    "secMark": 1500,
+    "lat": 411642198,
+    "long": -1048434061,
+    "elev": 18819,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#086",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464CC66EC000015E271707579665FF5EACFEFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401F3041FFFA1FFFFC02E3FFFFFFA1FFFFC057DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 51,
+    "id": "19BB0000",
+    "secMark": 1400,
+    "lat": 411641263,
+    "long": -1048433474,
+    "elev": 18941,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#087",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464CC66EC000015E271707579665FF5EACFEFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401F3041FFFA1FFFFC02E3FFFFFFA1FFFFC057DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 51,
+    "id": "19BB0000",
+    "secMark": 1400,
+    "lat": 411641263,
+    "long": -1048433474,
+    "elev": 18941,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#088",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5BAFA84000018FE717092D9665FE3AACC17FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1005EFFFFFFFE841A100C17FFFFFFE8B0E10221FFFFFFFE93F610287C01BFFFE97A210440C0653FFEA9221034040615FFEAFC6103AF40731FFEB9B2103E8C0A7FFFED3DE1035940929FFEDB7210305C0961FFEDFFA102DB40901FFEE0D61002940217FFF80FE1FFFFC00D9FFFC7261FFFFFFFFFFFFDEE61005DFFFFFFFFE36EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 110,
+    "id": "BEA10000",
+    "secMark": 1599,
+    "lat": 411642203,
+    "long": -1048434058,
+    "elev": 18818,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#089",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5BAFA84000018FE717092D9665FE3AACC17FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1005EFFFFFFFE841A100C17FFFFFFE8B0E10221FFFFFFFE93F610287C01BFFFE97A210440C0653FFEA9221034040615FFEAFC6103AF40731FFEB9B2103E8C0A7FFFED3DE1035940929FFEDB7210305C0961FFEDFFA102DB40901FFEE0D61002940217FFF80FE1FFFFC00D9FFFC7261FFFFFFFFFFFFDEE61005DFFFFFFFFE36EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 110,
+    "id": "BEA10000",
+    "secMark": 1599,
+    "lat": 411642203,
+    "long": -1048434058,
+    "elev": 18818,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#090",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464D066EC0000177271707579665FF5F2CFF7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401F5043FFFA1FFFFC02E5FFFFFFA1FFFFC057FFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 52,
+    "id": "19BB0000",
+    "secMark": 1500,
+    "lat": 411641263,
+    "long": -1048433473,
+    "elev": 18942,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#091",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464D066EC0000177271707579665FF5F2CFF7FFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401F5043FFFA1FFFFC02E5FFFFFFA1FFFFC057FFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 52,
+    "id": "19BB0000",
+    "secMark": 1500,
+    "lat": 411641263,
+    "long": -1048433473,
+    "elev": 18942,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#092",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5BEFA8400001A92717092F1665FE3C2CC0FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10060FFFFFFFE842E100C37FFFFFFE8B2210223FFFFFFFE940A10289C01C5FFE97B610442C0659FFEA936103424061BFFEAFDA103B140737FFEB9C6103EAC0A85FFED3F21035B4092FFFEDB8610307C0967FFEE00E102DD40907FFEE0EA1002B4021DFFF81121FFFFC00DFFFFC73A1FFFFFFFFFFFFDEFA1005FFFFFFFFFE382FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 111,
+    "id": "BEA10000",
+    "secMark": 1700,
+    "lat": 411642206,
+    "long": -1048434055,
+    "elev": 18817,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#093",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5BEFA8400001A92717092F1665FE3C2CC0FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10060FFFFFFFE842E100C37FFFFFFE8B2210223FFFFFFFE940A10289C01C5FFE97B610442C0659FFEA936103424061BFFEAFDA103B140737FFEB9C6103EAC0A85FFED3F21035B4092FFFEDB8610307C0967FFEE00E102DD40907FFEE0EA1002B4021DFFF81121FFFFC00DFFFFC73A1FFFFFFFFFFFFDEFA1005FFFFFFFFFE382FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 111,
+    "id": "BEA10000",
+    "secMark": 1700,
+    "lat": 411642206,
+    "long": -1048434055,
+    "elev": 18817,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#094",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464D466EC000018FE71707579665FF602CFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401F9045FFFA1FFFFC02E9FFFFFFA1FFFFC0583FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 53,
+    "id": "19BB0000",
+    "secMark": 1599,
+    "lat": 411641263,
+    "long": -1048433471,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#095",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464D466EC000018FE71707579665FF602CFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401F9045FFFA1FFFFC02E9FFFFFFA1FFFFC0583FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 53,
+    "id": "19BB0000",
+    "secMark": 1599,
+    "lat": 411641263,
+    "long": -1048433471,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#096",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5C2FA8400001C1E71709311665FE3D2CC0FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10062FFFFFFFE8442100C57FFFFFFE8B3610225FFFFFFFE941E1028BC01C9FFE97CA10444C065DFFEA94A103444061FFFEAFEE103B34073BFFEB9DA103ECC0A89FFED4061035D40933FFEDB9A10309C096BFFEE022102DF4090BFFEE0FE1002D40221FFF81261FFFFC00E3FFFC74E1FFFFFFFFFFFFDF0E10061FFFFFFFFE396FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 112,
+    "id": "BEA10000",
+    "secMark": 1799,
+    "lat": 411642210,
+    "long": -1048434053,
+    "elev": 18817,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#097",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5C2FA8400001C1E71709311665FE3D2CC0FFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10062FFFFFFFE8442100C57FFFFFFE8B3610225FFFFFFFE941E1028BC01C9FFE97CA10444C065DFFEA94A103444061FFFEAFEE103B34073BFFEB9DA103ECC0A89FFED4061035D40933FFEDB9A10309C096BFFEE022102DF4090BFFEE0FE1002D40221FFF81261FFFFC00E3FFFC74E1FFFFFFFFFFFFDF0E10061FFFFFFFFE396FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 112,
+    "id": "BEA10000",
+    "secMark": 1799,
+    "lat": 411642210,
+    "long": -1048434053,
+    "elev": 18817,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#098",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464D866EC00001A9271707579665FF60ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FB045FFFA1FFFFC02EBFFFFFFA1FFFFC0585FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 54,
+    "id": "19BB0000",
+    "secMark": 1700,
+    "lat": 411641263,
+    "long": -1048433470,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#099",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464D866EC00001A9271707579665FF60ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FB045FFFA1FFFFC02EBFFFFFFA1FFFFC0585FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 54,
+    "id": "19BB0000",
+    "secMark": 1700,
+    "lat": 411641263,
+    "long": -1048433470,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#100",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5C6FA8400001DB271709341665FE3FACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10065FFFFFFFE8456100C87FFFFFFE8B4A10228FFFFFFFE94321028EC01D3FFE97DE10447C0667FFEA95E1034740629FFEB002103B640745FFEB9EE103EFC0A93FFED41A103604093DFFEDBAE1030CC0975FFEE036102E240915FFEE112100304022BFFF813A1FFFFC00EDFFFC7621FFFFFFFFFFFFDF2210064FFFFFFFFE3AAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 113,
+    "id": "BEA10000",
+    "secMark": 1900,
+    "lat": 411642216,
+    "long": -1048434048,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#101",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5C6FA8400001DB271709341665FE3FACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10065FFFFFFFE8456100C87FFFFFFE8B4A10228FFFFFFFE94321028EC01D3FFE97DE10447C0667FFEA95E1034740629FFEB002103B640745FFEB9EE103EFC0A93FFED41A103604093DFFEDBAE1030CC0975FFEE036102E240915FFEE112100304022BFFF813A1FFFFC00EDFFFC7621FFFFFFFFFFFFDF2210064FFFFFFFFE3AAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 113,
+    "id": "BEA10000",
+    "secMark": 1900,
+    "lat": 411642216,
+    "long": -1048434048,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#102",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464DC66EC00001C1E71707579665FF60ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FB045FFFA1FFFFC02EBFFFFFFA1FFFFC0585FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 55,
+    "id": "19BB0000",
+    "secMark": 1799,
+    "lat": 411641263,
+    "long": -1048433470,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#103",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464DC66EC00001C1E71707579665FF60ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FB045FFFA1FFFFC02EBFFFFFFA1FFFFC0585FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 55,
+    "id": "19BB0000",
+    "secMark": 1799,
+    "lat": 411641263,
+    "long": -1048433470,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#104",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5CAFA8400001F4271709389665FE422CC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006A7FFFFFFE846A100CCFFFFFFFE8B5E1022D7FFFFFFE944610293401DDFFE97F21044C40671FFEA9721034BC0633FFEB016103BAC074FFFEBA02103F440A9DFFED42E10364C0947FFEDBC2103114097FFFEE04A102E6C091FFFEE12610034C0235FFF814E1FFFFC00F7FFFC776100027FFFFFFFDF36100697FFFFFFFE3BEFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 114,
+    "id": "BEA10000",
+    "secMark": 2000,
+    "lat": 411642225,
+    "long": -1048434043,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#105",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5CAFA8400001F4271709389665FE422CC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006A7FFFFFFE846A100CCFFFFFFFE8B5E1022D7FFFFFFE944610293401DDFFE97F21044C40671FFEA9721034BC0633FFEB016103BAC074FFFEBA02103F440A9DFFED42E10364C0947FFEDBC2103114097FFFEE04A102E6C091FFFEE12610034C0235FFF814E1FFFFC00F7FFFC776100027FFFFFFFDF36100697FFFFFFFE3BEFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 114,
+    "id": "BEA10000",
+    "secMark": 2000,
+    "lat": 411642225,
+    "long": -1048434043,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#106",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464E066EC00001DB271707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 56,
+    "id": "19BB0000",
+    "secMark": 1900,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#107",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464E066EC00001DB271707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 56,
+    "id": "19BB0000",
+    "secMark": 1900,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#108",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5CEFA84000020CE717093A1665FE43ACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006BFFFFFFFE847E100CE7FFFFFFE8B721022EFFFFFFFE945A10294C01E3FFE98061044DC0677FFEA9861034D40639FFEB02A103BC40755FFEBA16103F5C0AA3FFED442103664094DFFEDBD610312C0985FFEE05E102E840925FFEE13A100364023BFFF81621FFFFC00FDFFFC78A10003FFFFFFFFDF4A1006AFFFFFFFFE3D2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 115,
+    "id": "BEA10000",
+    "secMark": 2099,
+    "lat": 411642228,
+    "long": -1048434040,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#109",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5CEFA84000020CE717093A1665FE43ACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006BFFFFFFFE847E100CE7FFFFFFE8B721022EFFFFFFFE945A10294C01E3FFE98061044DC0677FFEA9861034D40639FFEB02A103BC40755FFEBA16103F5C0AA3FFED442103664094DFFEDBD610312C0985FFEE05E102E840925FFEE13A100364023BFFF81621FFFFC00FDFFFC78A10003FFFFFFFFDF4A1006AFFFFFFFFE3D2FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 115,
+    "id": "BEA10000",
+    "secMark": 2099,
+    "lat": 411642228,
+    "long": -1048434040,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#110",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464E466EC00001DB271707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 57,
+    "id": "19BB0000",
+    "secMark": 1900,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#111",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464E466EC00001DB271707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 57,
+    "id": "19BB0000",
+    "secMark": 1900,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#112",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5D2FA8400002262717093B1665FE44ACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006CFFFFFFFE8492100CF7FFFFFFE8B861022FFFFFFFFE946E10295C01E7FFE981A1044EC067BFFEA99A1034E4063DFFEB03E103BD40759FFEBA2A103F6C0AA7FFED4561036740951FFEDBEA10313C0989FFEE072102E940929FFEE14E100374023FFFF81761FFFFC0101FFFC79E10004FFFFFFFFDF5E1006BFFFFFFFFE3E6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 116,
+    "id": "BEA10000",
+    "secMark": 2200,
+    "lat": 411642230,
+    "long": -1048434038,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#113",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5D2FA8400002262717093B1665FE44ACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006CFFFFFFFE8492100CF7FFFFFFE8B861022FFFFFFFFE946E10295C01E7FFE981A1044EC067BFFEA99A1034E4063DFFEB03E103BD40759FFEBA2A103F6C0AA7FFED4561036740951FFEDBEA10313C0989FFEE072102E940929FFEE14E100374023FFFF81761FFFFC0101FFFC79E10004FFFFFFFFDF5E1006BFFFFFFFFE3E6FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 116,
+    "id": "BEA10000",
+    "secMark": 2200,
+    "lat": 411642230,
+    "long": -1048434038,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#114",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464E866EC000020CE71707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 58,
+    "id": "19BB0000",
+    "secMark": 2099,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#115",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464E866EC000020CE71707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 58,
+    "id": "19BB0000",
+    "secMark": 2099,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#116",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5D6FA84000023EE717093C9665FE44ACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006E7FFFFFFE84A6100D0FFFFFFFE8B9A102317FFFFFFE948210297401E7FFE982E104504067BFFEA9AE1034FC063DFFEB052103BEC0759FFEBA3E103F840AA7FFED46A10368C0951FFEDBFE1031540989FFEE086102EAC0929FFEE16210038C023FFFF818A1FFFFC0101FFFC7B2100067FFFFFFFDF721006D7FFFFFFFE3FAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 117,
+    "id": "BEA10000",
+    "secMark": 2299,
+    "lat": 411642233,
+    "long": -1048434038,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#117",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5D6FA84000023EE717093C9665FE44ACC07FFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C1006E7FFFFFFE84A6100D0FFFFFFFE8B9A102317FFFFFFE948210297401E7FFE982E104504067BFFEA9AE1034FC063DFFEB052103BEC0759FFEBA3E103F840AA7FFED46A10368C0951FFEDBFE1031540989FFEE086102EAC0929FFEE16210038C023FFFF818A1FFFFC0101FFFC7B2100067FFFFFFFDF721006D7FFFFFFFE3FAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 117,
+    "id": "BEA10000",
+    "secMark": 2299,
+    "lat": 411642233,
+    "long": -1048434038,
+    "elev": 18816,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#118",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464EC66EC000020CE71707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 59,
+    "id": "19BB0000",
+    "secMark": 2099,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#119",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464EC66EC000020CE71707579665FF61ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001D401FF045FFFA1FFFFC02EFFFFFFFA1FFFFC0589FFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 59,
+    "id": "19BB0000",
+    "secMark": 2099,
+    "lat": 411641263,
+    "long": -1048433468,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#120",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5DAFA840000258271709401665FE46ACBFFFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10071FFFFFFFE84BA100D47FFFFFFE8BAE10234FFFFFFFE94961029AC01EFFFE984210453C0683FFEA9C21035340645FFEB066103C240761FFEBA52103FBC0AAFFFED47E1036C40959FFEDC1210318C0991FFEE09A102EE40931FFEE1761003C40247FFF819E1FFFFC0109FFFC7C610009FFFFFFFFDF8610070FFFFFFFFE40EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 118,
+    "id": "BEA10000",
+    "secMark": 2400,
+    "lat": 411642240,
+    "long": -1048434034,
+    "elev": 18815,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#121",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5DAFA840000258271709401665FE46ACBFFFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C10071FFFFFFFE84BA100D47FFFFFFE8BAE10234FFFFFFFE94961029AC01EFFFE984210453C0683FFEA9C21035340645FFEB066103C240761FFEBA52103FBC0AAFFFED47E1036C40959FFEDC1210318C0991FFEE09A102EE40931FFEE1761003C40247FFF819E1FFFFC0109FFFC7C610009FFFFFFFFDF8610070FFFFFFFFE40EFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 118,
+    "id": "BEA10000",
+    "secMark": 2400,
+    "lat": 411642240,
+    "long": -1048434034,
+    "elev": 18815,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#122",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464F066EC000023EE71707589665FF62ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001E40203045FFFA1FFFFC02F3FFFFFFA1FFFFC058DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 60,
+    "id": "19BB0000",
+    "secMark": 2299,
+    "lat": 411641265,
+    "long": -1048433466,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#123",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464F066EC000023EE71707589665FF62ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001E40203045FFFA1FFFFC02F3FFFFFFA1FFFFC058DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 60,
+    "id": "19BB0000",
+    "secMark": 2299,
+    "lat": 411641265,
+    "long": -1048433466,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#124",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5DEFA840000271271709419665FE48ACBFFFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100737FFFFFFE84CE100D5FFFFFFFE8BC2102367FFFFFFE94AA1029C401F7FFE9856104554068BFFEA9D610354C064DFFEB07A103C3C0769FFEBA66103FD40AB7FFED4921036DC0961FFEDC261031A40999FFEE0AE102EFC0939FFEE18A1003DC024FFFF81B21FFFFC0111FFFC7DA1000B7FFFFFFFDF9A100727FFFFFFFE422FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 119,
+    "id": "BEA10000",
+    "secMark": 2500,
+    "lat": 411642243,
+    "long": -1048434030,
+    "elev": 18815,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#125",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "001480AD5DEFA840000271271709419665FE48ACBFFFFFFFFFF0003BBAFDFA1FA1007FFF8000000000020214C1C100737FFFFFFE84CE100D5FFFFFFFE8BC2102367FFFFFFE94AA1029C401F7FFE9856104554068BFFEA9D610354C064DFFEB07A103C3C0769FFEBA66103FD40AB7FFED4921036DC0961FFEDC261031A40999FFEE0AE102EFC0939FFEE18A1003DC024FFFF81B21FFFFC0111FFFC7DA1000B7FFFFFFFDF9A100727FFFFFFFE422FFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 119,
+    "id": "BEA10000",
+    "secMark": 2500,
+    "lat": 411642243,
+    "long": -1048434030,
+    "elev": 18815,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 15290,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#126",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464F466EC0000258271707589665FF62ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001E40203045FFFA1FFFFC02F3FFFFFFA1FFFFC058DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 61,
+    "id": "19BB0000",
+    "secMark": 2400,
+    "lat": 411641265,
+    "long": -1048433466,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  },
+  {
+   "name": "asn1_codec/128bsms#127",
+   "source": "usdot-jpo-ode/asn1_codec@1749ac5f2dab",
+   "entry": "MessageFrame",
+   "hex": "0014464F466EC0000258271707589665FF62ACFFFFFFFFFFF0007080FDFA1FA1007FFF8000000000007CC041001E40203045FFFA1FFFFC02F3FFFFFFA1FFFFC058DFFFFFFAFFFE0000",
+   "expectedCoreData": {
+    "msgCnt": 61,
+    "id": "19BB0000",
+    "secMark": 2400,
+    "lat": 411641265,
+    "long": -1048433466,
+    "elev": 18943,
+    "accuracy": {
+     "semiMajor": 255,
+     "semiMinor": 255,
+     "orientation": 65535
+    },
+    "transmission": "unavailable",
+    "speed": 0,
+    "heading": 28800,
+    "angle": 127,
+    "accelSet": {
+     "long": 2001,
+     "lat": 2001,
+     "vert": -127,
+     "yaw": 0
+    },
+    "brakes": {
+     "wheelBrakes": "10000",
+     "traction": "unavailable",
+     "abs": "unavailable",
+     "scs": "unavailable",
+     "brakeBoost": "unavailable",
+     "auxBrakes": "unavailable"
+    },
+    "size": {
+     "width": 0,
+     "length": 0
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+  "scenario": "emergency-braking",
+  "title": "Emergency braking",
+  "summary": "The driver stamps on the brake at 72 km/h: about 0.8 g of deceleration with ABS and brake assist active.",
+  "physics": [
+    "Longitudinal acceleration −7.8 m/s² (≈ −0.80 g) is typical of an ABS stop on dry asphalt.",
+    "All four wheel brakes are applied, ABS is engaged, and brake boost (brake assist) is on — the combination J2735 associates with emergency braking.",
+    "Heading stays constant and the yaw rate is near zero because the car brakes in a straight line."
+  ],
+  "inputs": {
+    "latitude": {
+      "value": "33.2108712",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "longitude": {
+      "value": "-87.5462871",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "elevation": {
+      "value": "38.6",
+      "unit": "m",
+      "unavailable": false
+    },
+    "utcSecond": {
+      "value": "31.900",
+      "unit": "s",
+      "unavailable": false
+    },
+    "semiMajor": {
+      "value": "1.20",
+      "unit": "m",
+      "unavailable": false
+    },
+    "semiMinor": {
+      "value": "0.85",
+      "unit": "m",
+      "unavailable": false
+    },
+    "orientation": {
+      "value": "15",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "transmission": "forwardGears",
+    "speed": {
+      "value": "72",
+      "unit": "km/h",
+      "unavailable": false
+    },
+    "heading": {
+      "value": "90",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "steeringWheelAngle": {
+      "value": "0",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "accelLong": {
+      "value": "-7.8",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelLat": {
+      "value": "0.1",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelVert": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "yawRate": {
+      "value": "0.2",
+      "unit": "deg/s",
+      "unavailable": false
+    },
+    "wheelBrakes": {
+      "unavailable": false,
+      "leftFront": true,
+      "leftRear": true,
+      "rightFront": true,
+      "rightRear": true
+    },
+    "traction": "on",
+    "abs": "engaged",
+    "scs": "on",
+    "brakeBoost": "on",
+    "auxBrakes": "off",
+    "vehicleWidth": {
+      "value": "1.86",
+      "unit": "m",
+      "unavailable": false
+    },
+    "vehicleLength": {
+      "value": "4.97",
+      "unit": "m",
+      "unavailable": false
+    }
+  },
+  "system": {
+    "msgCount": 52,
+    "temporaryId": "5A3F09C1"
+  }
+}

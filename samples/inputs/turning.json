@@ -1,0 +1,110 @@
+{
+  "scenario": "turning",
+  "title": "Turning vehicle",
+  "summary": "A right turn at 25 km/h around a 20 m radius corner, captured mid-turn while heading south-east.",
+  "physics": [
+    "Yaw rate = v / R = 6.944 m/s ÷ 20 m = 0.347 rad/s = 19.89 deg/s (positive: turning right, clockwise).",
+    "Lateral acceleration = v² / R = 2.411 m/s², positive toward the right side (the centre of a right turn).",
+    "Steering wheel ≈ atan(L/R) × steering ratio = atan(2.83/20) × 15.7 ≈ 126° to the right.",
+    "A light lift off the accelerator gives a small negative longitudinal acceleration."
+  ],
+  "inputs": {
+    "latitude": {
+      "value": "33.2108712",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "longitude": {
+      "value": "-87.5462871",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "elevation": {
+      "value": "38.6",
+      "unit": "m",
+      "unavailable": false
+    },
+    "utcSecond": {
+      "value": "45.020",
+      "unit": "s",
+      "unavailable": false
+    },
+    "semiMajor": {
+      "value": "1.20",
+      "unit": "m",
+      "unavailable": false
+    },
+    "semiMinor": {
+      "value": "0.85",
+      "unit": "m",
+      "unavailable": false
+    },
+    "orientation": {
+      "value": "15",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "transmission": "forwardGears",
+    "speed": {
+      "value": "25",
+      "unit": "km/h",
+      "unavailable": false
+    },
+    "heading": {
+      "value": "135",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "steeringWheelAngle": {
+      "value": "126.4",
+      "unit": "deg",
+      "unavailable": false
+    },
+    "accelLong": {
+      "value": "-0.3",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelLat": {
+      "value": "2.411",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "accelVert": {
+      "value": "0",
+      "unit": "m/s²",
+      "unavailable": false
+    },
+    "yawRate": {
+      "value": "19.89",
+      "unit": "deg/s",
+      "unavailable": false
+    },
+    "wheelBrakes": {
+      "unavailable": false,
+      "leftFront": false,
+      "leftRear": false,
+      "rightFront": false,
+      "rightRear": false
+    },
+    "traction": "on",
+    "abs": "on",
+    "scs": "on",
+    "brakeBoost": "off",
+    "auxBrakes": "off",
+    "vehicleWidth": {
+      "value": "1.86",
+      "unit": "m",
+      "unavailable": false
+    },
+    "vehicleLength": {
+      "value": "4.97",
+      "unit": "m",
+      "unavailable": false
+    }
+  },
+  "system": {
+    "msgCount": 88,
+    "temporaryId": "5A3F09C1"
+  }
+}
